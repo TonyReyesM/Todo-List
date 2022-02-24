@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>To-do List</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <div class="header">
+            <div class="header-title">To-do List</div>
+        </div>
+        <div class="content">
+            <div class="sidebar">
+                <div class="defaults">
+                    <div class="default project-name inbox section selected-project">Inbox</div>
+                    <div class="default project-name today section">Today</div>
+                    <div class="default project-name this-week section">This Week</div>
+                </div>
+                <div class="projects">
+                    <div class="projects-title">Projects</div>
+                    <ul class="projects-list">
+    
+                    </ul>
+                    <!--
+                    <button class="sidebar-btn add-project">+ Add Project</button>
+                    <button class="sidebar-btn del-project">Delete</button>
+                    -->
+                </div>
+                <div class="sidebar-btns">
+                    <button class="sidebar-btn add-project">+ Add Project</button>
+                    <button class="sidebar-btn del-project">Delete</button>
+                </div>
+            </div>
+            <div class="display">
+                <h1 class="display-title"></h1>
+                <div class="display-tasks"></div>
+                <div class="display-btns">
+                    <button class="add-task">+ Add Task</button>
+                    <button class="review-btn">Review Task</button>
+                    <button class="delete-btn">Delete Task</button>
+                </div>
+                
+            </div>
+        </div>
+        <div class="footer">Copyright © 2022 tonyreyesm</div>
+        <div class="modal-bg">
+            <div class="modal">
+                <h2 class="modal-title">Task properties</h2>
+                <div class="inputs">
+                    <div class="modal-label">Title:</div>
+                    <input class="task-input title" type="text">
+                    <div class="modal-label">Description:</div>
+                    <textarea cols="30" rows="10" class="task-input description"></textarea>
+                    <div class="modal-label">Due date:</div>
+                    <input class="task-input duedate" type="date">
+                    <div class="modal-label">Priority:</div>
+                    <div class="priority-sec">
+                        <div class="priority">
+                            <input class="priority-input high" type="checkbox" value="High"> High
+                        </div>
+                        <div class="priority">
+                            <input class="priority-input medium" type="checkbox" value="Medium"> Medium
+                        </div>
+                        <div class="priority">
+                            <input class="priority-input high low" type="checkbox" value="Low"> Low
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-buttons">
+                    <button class="modal close">Close</button>
+                    <button class="modal submit">Submit</button>
+                    <button class="modal edit hidden">Edit</button>
+                </div>
+            </div>
+        </div>
+        <script src="bundle.js"></script>
+    </body>
+</html>
