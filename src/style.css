@@ -1,0 +1,375 @@
+@font-face {
+    font-family: 'MyFont';
+    src: url('./fonts/airstrike.ttf');
+    font-weight: 600;
+    font-style: normal;
+}
+
+html {
+    height: 100%;
+}
+body {
+    height: 98%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'MyFont';
+    color: whitesmoke;
+    background-image: url("./hypercube.jpg");
+    background-attachment: fixed;
+    background-position: center;
+}
+
+button {
+    font-family: 'MyFont';
+    font-size: 20px;
+    font-weight: bold;
+    width: 200px;
+    color: whitesmoke;
+    font-weight: bold;
+    background-color: rgb(27, 39, 51);
+    border-style: solid;
+    border-radius: 5px;
+    padding: 8px;
+    transition: all .07s ease;
+}
+
+.header {
+    font-family: 'MyFont';
+    font-weight: 1000;
+    height: 10%;
+    width: 98%;
+    display: flex;
+    flex-shrink: 0;
+    justify-content: space-between;
+    row-gap: 10px;
+    border-width: 5px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: black;
+    margin: 3px;
+    padding: 8px;
+    background-color: rgba(0, 21, 41, 0.856);
+}
+
+.header-title {
+    font-size: 50px;
+    margin-left: 50px;
+    padding: 5px;
+}
+
+.header-buttons {
+    display: flex;
+    column-gap: 15px;
+}
+
+.content {
+    width: 98%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    border-width: 5px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: black;
+    margin: 3px;
+    padding: 8px;
+    background-color: rgba(0, 21, 41, 0.856);
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(59, 55, 83, 0.425);
+    height: 100%;
+    width: 25%;
+    border-right-style: solid;
+    border-color: black;
+    border-width: 5px;
+    border-radius: 3px;
+    
+}
+
+.defaults {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    row-gap: 8px;
+}
+
+.default {
+    font-size: 20px;
+}
+
+.projects {
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.projects-title {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.projects-list {
+    flex: 1;
+    padding-left: 20px;
+    font-size: 16px;
+    margin: 0px;
+    max-height: 200px;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+}
+
+.projects-list::-webkit-scrollbar{
+    width: 0.5vw;
+}
+
+.projects-list::-webkit-scrollbar-thumb{
+    background-color: rgb(83, 83, 83);
+}
+
+.projects-list::-webkit-scrollbar-track{
+    background-color: rgb(54, 54, 54);
+}
+
+.project-name {
+    margin-right: 5px;
+}
+
+.new-project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+}
+
+.sidebar-btns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: flex-end;
+    justify-content: flex-end;    
+}
+
+.sidebar-btn {
+    margin: 5px;
+}
+
+.del-project {
+    background-color: rgb(88, 0, 0)
+}
+
+.add-project-btns-section {
+    display: flex;
+    column-gap: 30px;
+}
+
+.cancel-submit-project {
+    flex: 0;
+    font-size: 14px;
+    width: fit-content;
+    background-color: rgb(88, 0, 0);
+}
+
+.submit-project {
+    flex: 0;
+    font-size: 14px;
+    width: fit-content;
+}
+
+.display {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    height: 100%;
+    flex: 1;
+    overflow: hidden;
+}
+
+.display-title {
+    font-size: 28px;
+    margin-left: 6%;
+}
+
+.display-tasks {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    max-height: 320px;
+    overflow-y: scroll;
+}
+
+.display-tasks::-webkit-scrollbar{
+    width: 1vw;
+}
+
+.display-tasks::-webkit-scrollbar-thumb{
+    background-color: rgb(83, 83, 83);
+}
+
+.display-tasks::-webkit-scrollbar-track{
+    background-color: rgb(54, 54, 54);
+}
+
+.task-unit {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.task-unit-side {
+    display: flex;
+    column-gap: 50px;
+    align-items: center;
+}
+
+.task-unit-priority {
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+
+}
+
+.display-btns {
+    margin-right: 5%;
+    display: flex;
+    column-gap: 10px;
+    justify-content: flex-end;
+}
+
+.review-btn {
+    background-color: rgb(31, 0, 88);
+}
+
+.delete-btn {
+    background-color: rgb(88, 0, 0);
+}
+
+.footer {
+    font-family: 'MyFont';
+    width: 100%;
+    display: flex;
+    height: 40px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.849);
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.hovered-btn {
+    background-color: rgba(114, 114, 114, 0.685);
+    color: rgb(27, 39, 51);
+    border-style: none;
+    transform: scale(1.05);
+}
+
+.section {
+    padding: 5px;
+}
+
+.selected-project {
+    background-color: rgba(114, 114, 114, 0.685);
+    border-radius: 5px;
+}
+
+.hovered-sec {
+    background-color: rgba(114, 114, 114, 0.685);
+    border-radius: 5px;
+}
+
+.selected-task {
+    border-radius: 5px;
+    background-color: rgba(114, 114, 114, 0.685);
+}
+
+.modal-bg {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .07s ease;
+}
+
+.bg-active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 15px;
+    font-weight: bold;
+    background-color: rgba(245, 245, 245, 0.856);
+    color: rgba(0, 21, 41, 0.856);
+    border-width: 5px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: black;
+    width: 30%;
+    height: fit-content;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex: 1;
+    row-gap: 10px;
+}
+
+.task-input {
+    flex: auto;
+}
+
+.task-input.description {
+    height: 50px;
+}
+
+.priority-sec {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-buttons {
+    display: flex;
+    column-gap: 10px;
+    align-self: flex-end;
+}
+
+button.modal {
+    width: fit-content;
+    height: fit-content;
+    font-size: 12px;
+    color: whitesmoke;
+    background-color: rgb(27, 39, 51);
+    border-color: rgb(100, 99, 99);
+}
+
+.hidden {
+    display: none;
+    visibility: hidden;
+}
